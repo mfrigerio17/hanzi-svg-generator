@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="../characters.css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 5120 2048">
+  <g transform="translate(0,0)">
+    <g class="background-stroke">
+      <use href="paths.svg#stroke2"/>
+      <use href="paths.svg#stroke3"/>
+      <use href="paths.svg#stroke4"/>
+      <use href="paths.svg#stroke5"/>
+      <use href="paths.svg#stroke6"/>
+      <use href="paths.svg#stroke7"/>
+    </g>
+    <g class="painted-stroke">
+</g>
+    <g class="fresh-stroke">
+      <use href="paths.svg#stroke1"/>
+    </g>
+  </g>
+  <g transform="translate(1024,0)">
+    <g class="background-stroke">
+      <use href="paths.svg#stroke3"/>
+      <use href="paths.svg#stroke4"/>
+      <use href="paths.svg#stroke5"/>
+      <use href="paths.svg#stroke6"/>
+      <use href="paths.svg#stroke7"/>
+    </g>
+    <g class="painted-stroke">
+      <use href="paths.svg#stroke1"/>
+    </g>
+    <g class="fresh-stroke">
+      <use href="paths.svg#stroke2"/>
+    </g>
+  </g>
+  <g transform="translate(2048,0)">
+    <g class="background-stroke">
+      <use href="paths.svg#stroke4"/>
+      <use href="paths.svg#stroke5"/>
+      <use href="paths.svg#stroke6"/>
+      <use href="paths.svg#stroke7"/>
+    </g>
+    <g class="painted-stroke">
+      <use href="paths.svg#stroke1"/>
+      <use href="paths.svg#stroke2"/>
+    </g>
+    <g class="fresh-stroke">
+      <use href="paths.svg#stroke3"/>
+    </g>
+  </g>
+  <g transform="translate(3072,0)">
+    <g class="background-stroke">
+      <use href="paths.svg#stroke5"/>
+      <use href="paths.svg#stroke6"/>
+      <use href="paths.svg#stroke7"/>
+    </g>
+    <g class="painted-stroke">
+      <use href="paths.svg#stroke1"/>
+      <use href="paths.svg#stroke2"/>
+      <use href="paths.svg#stroke3"/>
+    </g>
+    <g class="fresh-stroke">
+      <use href="paths.svg#stroke4"/>
+    </g>
+  </g>
+  <g transform="translate(4096,0)">
+    <g class="background-stroke">
+      <use href="paths.svg#stroke6"/>
+      <use href="paths.svg#stroke7"/>
+    </g>
+    <g class="painted-stroke">
+      <use href="paths.svg#stroke1"/>
+      <use href="paths.svg#stroke2"/>
+      <use href="paths.svg#stroke3"/>
+      <use href="paths.svg#stroke4"/>
+    </g>
+    <g class="fresh-stroke">
+      <use href="paths.svg#stroke5"/>
+    </g>
+  </g>
+  <g transform="translate(0,1024)">
+    <g class="background-stroke">
+      <use href="paths.svg#stroke7"/>
+    </g>
+    <g class="painted-stroke">
+      <use href="paths.svg#stroke1"/>
+      <use href="paths.svg#stroke2"/>
+      <use href="paths.svg#stroke3"/>
+      <use href="paths.svg#stroke4"/>
+      <use href="paths.svg#stroke5"/>
+    </g>
+    <g class="fresh-stroke">
+      <use href="paths.svg#stroke6"/>
+    </g>
+  </g>
+  <g transform="translate(1024,1024)">
+    <g class="background-stroke">
+</g>
+    <g class="painted-stroke">
+      <use href="paths.svg#stroke1"/>
+      <use href="paths.svg#stroke2"/>
+      <use href="paths.svg#stroke3"/>
+      <use href="paths.svg#stroke4"/>
+      <use href="paths.svg#stroke5"/>
+      <use href="paths.svg#stroke6"/>
+    </g>
+    <g class="fresh-stroke">
+      <use href="paths.svg#stroke7"/>
+    </g>
+  </g>
+</svg>

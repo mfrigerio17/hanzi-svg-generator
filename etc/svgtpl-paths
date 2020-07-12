@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <!-- All the coordinates are scaled for a 1024x1024 canvas -->
+
+    <symbol id="strokes">
+        «strokes-paths»
+    </symbol>
+    <symbol id="medians">
+        «median-paths»
+    </symbol>
+</svg>

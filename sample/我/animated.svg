@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="../characters.css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+  <!-- Display the guidelines and the full character, in the "background". -->
+  <use id="guidelines" href="../guidelines.svg#guidelines"/>
+  <use class="background-stroke" href="paths.svg#strokes"/>
+  <!-- Display the animated strokes -->
+  <g class="anim-stroke-group">
+    <use href="guidepaths.svg#paint1" class="anim-stroke-group-1"/>
+    <use href="guidepaths.svg#paint2" class="anim-stroke-group-2"/>
+    <use href="guidepaths.svg#paint3" class="anim-stroke-group-3"/>
+    <use href="guidepaths.svg#paint4" class="anim-stroke-group-4"/>
+    <use href="guidepaths.svg#paint5" class="anim-stroke-group-5"/>
+    <use href="guidepaths.svg#paint6" class="anim-stroke-group-6"/>
+    <use href="guidepaths.svg#paint7" class="anim-stroke-group-7"/>
+  </g>
+</svg>

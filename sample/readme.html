@@ -1,0 +1,139 @@
+<html>
+<meta charset=utf-8>
+<p>Usage examples of the "Chinese character SVG generator".</p>
+<p>Copyright 2020, Marco Frigerio.</p>
+
+<p>You may need to disable the <code>strict_origin_policy</code> setting of
+your browser to view this document.</p>
+
+<h1>Paths and inline SVG</h1>
+<p>The following snippet is valid html that displays the character 我.
+The code gives an example of how to reference the basic svg-paths stored in
+<code>paths.svg</code>, to create an image. In this case, we are using an inline
+svg within the html.</p>
+
+<textarea readonly cols="100" rows="10">
+<html>
+<meta charset=utf-8>
+<body>
+  <svg fill="black" viewBox="0 0 1024 1024" width="128px"><use href="我/paths.svg#strokes"/></svg>
+  <svg fill="blue"  viewBox="0 0 1024 1024" width="128px"><use href="我/paths.svg#strokes"/></svg>
+  <svg fill="green" viewBox="0 0 1024 1024" width="128px"><use href="我/paths.svg#strokes"/></svg>
+</body>
+</html>
+</textarea>
+
+<p>Here is the same code, rendered:</p>
+<p>
+<svg fill="black" viewBox="0 0 1024 1024" width="128px"><use href="我/paths.svg#strokes"/></svg>
+<svg fill="blue"  viewBox="0 0 1024 1024" width="128px"><use href="我/paths.svg#strokes"/></svg>
+<svg fill="green" viewBox="0 0 1024 1024" width="128px"><use href="我/paths.svg#strokes"/></svg>
+</p>
+
+<p>Note the <code>viewBox</code> attribute. It is necessary, do not change the
+values (unless you really want to display only part of the character).
+This example already shows some very simple SVG styling with inline attributes.</p>
+
+<p>
+Another sample, this time with explicit references to the individual strokes of
+the same character; the last stroke is styled using a class defined in the CSS
+file:
+</p>
+<p>
+<textarea readonly cols="82" rows="17">
+<html>
+<meta charset=utf-8>
+<body>
+<svg viewBox="0 0 1024 1024" width="128px">
+  <use fill="blue"   href="我/paths.svg#stroke1"/>
+  <use fill="violet" href="我/paths.svg#stroke2"/>
+  <use fill="green"  href="我/paths.svg#stroke3"/>
+  <use fill="purple" href="我/paths.svg#stroke4"/>
+  <use fill="gray"   href="我/paths.svg#stroke5"/>
+  <use fill="yellow" stroke-width="20" stroke="black" href="我/paths.svg#stroke6"/>
+  <use class="foreground-stroke" href="我/paths.svg#stroke7"/>
+</svg>
+</body>
+</html>
+</textarea>
+</p>
+<p>
+<svg viewBox="0 0 1024 1024" width="128px">
+      <use fill="blue"   href="我/paths.svg#stroke1"/>
+      <use fill="violet" href="我/paths.svg#stroke2"/>
+      <use fill="green"  href="我/paths.svg#stroke3"/>
+      <use fill="purple" href="我/paths.svg#stroke4"/>
+      <use fill="gray"   href="我/paths.svg#stroke5"/>
+      <use fill="yellow" stroke-width="20" stroke="black" href="我/paths.svg#stroke6"/>
+      <use class="foreground-stroke" href="我/paths.svg#stroke7"/>
+</svg>
+</p>
+
+<h1>SVGs for direct rendering</h1>
+<h2>Static stroke sequence</h2>
+<p>
+Use an <code>&lt;object&gt;</code> element to include the generated SVGs meant
+for direct display, like <code>sequence.svg</code>. Here is an example:
+</p>
+<textarea readonly cols="100" rows="7">
+    <html>
+    <meta charset=utf-8>
+    <body>
+        <object width="512px" type="image/svg+xml" data="我/sequence.svg"></object>
+    </body>
+    </html>
+</textarea>
+
+<p>
+Here is the result:
+</p>
+<object width="512px" type="image/svg+xml" data="我/sequence.svg">
+If you are reading this, then your html viewer failed to render the code shown
+above; most probably because it does not support SVG code referencing external
+files, which is what <code>sequence.svg</code> does.
+</object>
+<p>
+<code>sequence.svg</code> does refer to <code>paths.svg</code>, and it does not
+define itself any svg-paths.
+</p>
+
+<p>
+On the other hand, <code>standalone-sequence.svg</code> is standalone, it does
+not refer to other SVGs, and as such it is more portable (and should work on
+more html viewers); it
+can be used when the above does not work. The visual result, though, is exactly
+the same:
+</p>
+<object width="512px" type="image/svg+xml" data="我/standalone-sequence.svg"></object>
+
+<p>
+Both these files are using some class attributes for CSS styling:
+<code>fresh-stroke</code>, <code>painted-stroke</code> and
+<code>background-stroke</code>. Look into <code>characters.css</code> and into
+the SVG files themselves for details.
+</p>
+
+
+<h2>Animated stroke sequence</h2>
+<p>
+In the same way, using the <code>&lt;object&gt;</code> element, the animated SVG
+can be displayed in a html page (refresh this page to restart the animation):
+</p>
+<p>
+<textarea readonly cols="100" rows="7">
+    <html>
+    <meta charset=utf-8>
+    <body>
+        <object width="256px" type="image/svg+xml" data="我/animated.svg"></object>
+    </body>
+    </html>
+</textarea>
+</p>
+<object width="256px" type="image/svg+xml" data="我/animated.svg"></object>
+<p>
+This animation is basically the same as those in the "Make me a hanzi" project;
+in this case, though, the SVG image is a composition of reusable SVG sources,
+and it uses CSS styling. <code>animated.svg</code> internally references
+<code>paths.svg</code> and <code>guidepaths.svg</code>.
+</p>
+</html>

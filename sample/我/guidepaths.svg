@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <clipPath id="clip1">
+    <use href="paths.svg#stroke1"/>
+  </clipPath>
+  <clipPath id="clip2">
+    <use href="paths.svg#stroke2"/>
+  </clipPath>
+  <clipPath id="clip3">
+    <use href="paths.svg#stroke3"/>
+  </clipPath>
+  <clipPath id="clip4">
+    <use href="paths.svg#stroke4"/>
+  </clipPath>
+  <clipPath id="clip5">
+    <use href="paths.svg#stroke5"/>
+  </clipPath>
+  <clipPath id="clip6">
+    <use href="paths.svg#stroke6"/>
+  </clipPath>
+  <clipPath id="clip7">
+    <use href="paths.svg#stroke7"/>
+  </clipPath>
+  <defs id="clipped-medians">
+    <use id="paint1" href="paths.svg#median1" clip-path="url(#clip1)" class="animation-guidepath" stroke-dashoffset="290.792" stroke-dasharray="290.792 354.792"/>
+    <use id="paint2" href="paths.svg#median2" clip-path="url(#clip2)" class="animation-guidepath" stroke-dashoffset="583.086" stroke-dasharray="583.086 647.086"/>
+    <use id="paint3" href="paths.svg#median3" clip-path="url(#clip3)" class="animation-guidepath" stroke-dashoffset="619.7" stroke-dasharray="619.7 683.7"/>
+    <use id="paint4" href="paths.svg#median4" clip-path="url(#clip4)" class="animation-guidepath" stroke-dashoffset="425.395" stroke-dasharray="425.395 489.395"/>
+    <use id="paint5" href="paths.svg#median5" clip-path="url(#clip5)" class="animation-guidepath" stroke-dashoffset="1096.585" stroke-dasharray="1096.585 1160.585"/>
+    <use id="paint6" href="paths.svg#median6" clip-path="url(#clip6)" class="animation-guidepath" stroke-dashoffset="425.996" stroke-dasharray="425.996 489.996"/>
+    <use id="paint7" href="paths.svg#median7" clip-path="url(#clip7)" class="animation-guidepath" stroke-dashoffset="148.055" stroke-dasharray="148.055 212.055"/>
+  </defs>
+</svg>

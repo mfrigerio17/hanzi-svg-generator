@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+    <g id="guidelines" class="guidelines">
+        <line x1="0"    y1="0"   x2="1024" y2="1024"></line>
+        <line x1="1024" y1="0"   x2="0"    y2="1024"></line>
+        <line x1="512"  y1="0"   x2="512"  y2="1024"></line>
+        <line x1="0"    y1="512" x2="1024" y2="512"></line>
+    </g>
+</svg>

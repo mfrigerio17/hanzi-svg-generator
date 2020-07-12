@@ -1,0 +1,14 @@
+<?xml-stylesheet type="text/css" href="../characters.css"?>
+<svg version="1.1" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Display the guidelines and the full character, in the "background". -->
+
+    <use id="guidelines" href="../guidelines.svg#guidelines"></use>
+    <use class="background-stroke" href="paths.svg#strokes"></use>
+
+    <!-- Display the animated strokes -->
+
+    <g class="anim-stroke-group">
+        «clipped-paths»
+    </g>
+</svg>

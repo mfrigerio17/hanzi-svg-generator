@@ -1,0 +1,93 @@
+.guidelines {
+    stroke: lightgray;
+    stroke-dasharray: 16 16;
+    stroke-width: 4;
+}
+
+.fresh-stroke {
+    fill: blue;
+}
+.painted-stroke {
+    fill: darkgray;
+}
+.background-stroke {
+    fill: lightgray;
+}
+.foreground-stroke {
+    fill: black;
+}
+.animation-guidepath {
+    fill: none;
+    stroke-linecap: round;
+    animation: brush-animation both;
+    animation-timing-function: linear;
+    animation-delay : inherit;
+    animation-duration : inherit;
+}
+.anim-stroke-group *{
+    animation-duration : 1s;
+}
+.anim-stroke-group-2{
+    animation-delay : 1s;
+}
+.anim-stroke-group-3{
+    animation-delay : 2s;
+}
+.anim-stroke-group-4{
+    animation-delay : 3s;
+}
+.anim-stroke-group-5{
+    animation-delay : 4s;
+}
+.anim-stroke-group-6{
+    animation-delay : 5s;
+}
+.anim-stroke-group-7{
+    animation-delay : 6s;
+}
+.anim-stroke-group-8{
+    animation-delay : 7s;
+}
+.anim-stroke-group-9{
+    animation-delay : 8s;
+}
+.anim-stroke-group-10{
+    animation-delay : 9s;
+}
+.anim-stroke-group-11{
+    animation-delay : 10s;
+}
+.anim-stroke-group-12{
+    animation-delay : 11s;
+}
+.anim-stroke-group-13{
+    animation-delay : 12s;
+}
+.anim-stroke-group-14{
+    animation-delay : 13s;
+}
+.anim-stroke-group-15{
+    animation-delay : 14s;
+}
+.anim-stroke-group-16{
+    animation-delay : 15s;
+}
+
+@keyframes brush-animation {
+    from {
+        stroke: blue;
+        stroke-width: 128;
+    }
+    80% {
+        animation-timing-function: step-end;
+        stroke: blue;
+        stroke-dashoffset: 0;
+        stroke-width: 128;
+    }
+    to {
+        stroke: black;
+        stroke-dashoffset: 0;
+        stroke-width: 192;
+    }
+}
+
